@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Главная - HAIRMATES</title>
+
+	<meta name="keywords" content="Главная" />
+	<meta name="description" content="" />
+	<!-- <base href="https://hairmates.ru/" /> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta property="og:url" content="https://hairmates.ru/" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Главная - HAIRMATES" />
+	<meta property="og:description" content="" />
+	<meta property="og:image" content="https://hairmates.ru/assets/templates/hairmates/img/video.jpg" />
+	<link rel="icon" href="assets/templates/hairmates/img/favicon.svg">
+	<link rel="icon" href="favicon.ico">
+
+	<!-- Styles -->
+	<link href="assets/templates/hairmates/libs/swiper/swiper-bundle.min.css" rel="stylesheet">
+	<link href="assets/templates/hairmates/libs/nice-select2.css" rel="stylesheet">
+	<link href="assets/templates/hairmates/libs/modal/modal.css" rel="stylesheet">
+	<link href="assets/templates/hairmates/libs/start.css" rel="stylesheet">
+	<link href="assets/templates/hairmates/css/main.css" rel="stylesheet">
+	<link href="assets/templates/hairmates/css/add.css?v=1683264236" rel="stylesheet">
+	<link href="assets/templates/add.css" rel="stylesheet">
+	<link href="assets/templates/add.css" rel="stylesheet">
+
+	<!-- cookie-popup & cookie-popup Styles -->
+	<link href="./css/popups-start.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<!-- COOKIEPOPUP - показывается классом is-active, скрывается is-hidden -->
+	<div class="popup-start cookie-popup is-hidden">
+		<div class="popup-start__overlay cookie-popup__overlay">
+			<div class="popup-start__body cookie-popup__body">
+				<button type="button" class="popup-start__close"></button>
+				<p class="cookie-popup__text">Мы используем файлы cookie, чтобы улучшить ваш просмотр, показывать персонализированную рекламу или
+					контент, а также анализировать трафик. Нажимая «Принять всё», вы соглашаетесь на использование нами файлов cookie.</p>
+				<div class="popup-start__btns cookie-popup__btns">
+					<button type="button" class="popup-start__btn" id="accept-cookie">Принять всё</button>
+					<button type="button" class="popup-start__btn" id="cancel-cookie">Отменить всё</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- / COOKIEPOPUP -->
+
+	<!-- SUBSCRIBE - показывается классом is-active, скрывается is-hidden -->
+	<div class="popup-start subscribe is-active">
+		<div class="popup-start__overlay">
+			<div class="popup-start__body subscribe__body">
+				<button type="button" class="popup-start__close"></button>
+				<div class="subscribe__content">
+					<div class="subscribe__head">
+						<div class="subscribe__title">Подпишитесь на нашу рассылку!</div>
+						<div class="subscribe__descr">Получите -10% на заказ в нашем онлайн- магазине и узнавайте о новостях hairmates первыми.</div>
+					</div>
+					<!-- subscribe-form -->
+					<form class="subscribe-form" action="" method="POST">
+						<div class="subscribe-form__group">
+							<div class="subscribe-form__label">Ваш e-mail*</div>
+							<input class="subscribe-form__input" type="text" id="email" name="email" placeholder="Введите E-mail адрес*" required>
+						</div>
+						<div class="popup-start__btns subscribe__btns">
+							<input type="submit" class="popup-start__btn subscribe-form__btn" name="sf_btn" value="Подписаться">
+							<button type="button" class="popup-start__btn" id="subscribe-close">Не сейчас</button>
+						</div>
+					</form>
+					<!-- / .subscribe-form -->
+				</div>
+				<div class="subscribe__image" style="background-image: url(assets/templates/hairmates/img/subscribe-img.jpg);">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /SUBSCRIBE -->
+
+
+	<div class="pageWrapper">
+
+		<div class="cartPopup-overlay" data-cart-close></div>
+		<div class="cartPopup">
+			<div class="cartPopup-wrapper df direction">
+
+
+				<div id="shopCart" class="shop-cart">
+
+					<div class="cartPopup-list df aic cartPopup-top">
+
+						<div class="cartPopup-block">
+							<div class="cartPopup-text">Корзина</div>
+						</div>
+						<div class="cartPopup-block">
+							<div class="cartPopup-text"></div>
+						</div>
+						<div class="cartPopup-block">
+							<div class="cartPopup-close cursor db" data-cart-close>
+								<img class="img" src="assets/templates/hairmates/img/close.svg" alt="close">
+							</div>
+						</div>
+
+					</div>
+					<br><br>
+					<div class="cartPopup-empty">Ваша корзина пуста. <br>
+						<a href="shop.html" class="cursor1">перейдите</a> к покупкам
+					</div>
+
+
+				</div>
+
+			</div>
+		</div>
+		<div class="mobileMenu">
+			<div class="container df">
+				<div class="mobileMenu-wrapper df direction">
+					<div class="mobileMenu-top df aic jcsb" data-close>
+						<div class="mobileMenu-top__text">Меню</div>
+						<div class="mobileMenu-close dif aic" data-close><span>закрыть</span>
+							<img class="img" src="assets/templates/hairmates/img/close.svg" alt="close">
+						</div>
+					</div>
+					<div class="mobileMenu-navWrapper">
+						<nav class="mobileMenu-nav">
+							<ul>
+								<li class="active"><a href="https://hairmates.ru/" title="Главная">Главная</a></li>
+								<li><a href="/shop.html" title="Магазин">Магазин</a></li>
+								<li><a href="/look-book.html" title="Книга отзывов">Книга отзывов</a></li>
+								<li class="last"><a href="/about.html" title="О нас">О нас</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="mobileMenu-navWrapper">
+						<nav class="mobileMenu-nav">
+							<ul>
+								<li><a href="cart.html" id="count_cart">Корзина — 0</a></li>
+								<!--li><a href="#">profile  </a></li>
+                  <li><a href="#">search</a></li-->
+							</ul>
+						</nav>
+					</div>
+					<div class="mobileMenu-navWrapper">
+						<nav class="mobileMenu-nav mobileMenu-lh">
+							<ul>
+								<li><a href="/contact.html" title="Контакты">Контакты</a></li>
+								<li><a href="/whatsapp.html" title="Whatsapp">Whatsapp</a></li>
+								<li><a href="/messenger.html" title="Messenger">Messenger</a></li>
+								<li><a href="/faq.html" title="FAQ">FAQ</a></li>
+								<li><a href="/legal-terms.html" title="Юридические термины">Юридические термины</a></li>
+								<li class="last"><a href="/privacy-policy.html" title="Политика конфиденциальности">Политика конфиденциальности</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="mobileMenu-links mobileMenu-lh">
+						<a class="mobileMenu-link" href="/">INTERNATIONAL WEB SITE | EN</a>
+						<br>
+						<!--a class="mobileMenu-link" href="#">SUBSCRIBE TO NEWSLETTER</a-->
+					</div>
+					<div class="mobileMenu-bottom">COPYRIGHT © 2023 HAIRMATES</div>
+				</div>
+			</div>
+		</div>
+		<header class="header">
+			<div class="header-top center df aic jcc">
+				<div class="container">
+					<div class="header-top__text">Бесплатная доставка по всему миру при заказе на сумму свыше 250 $</div>
+				</div>
+			</div>
+			<div class="header-wrapper">
+				<div class="header-center">
+					<div class="container">
+						<div class="header-center__list df aic jcsb">
+							<div class="header-block">
+								<div class="header-burger cursor" data-burger>Меню</div>
+								<nav class="header-nav">
+									<ul>
+										<li class="active"><a href="https://hairmates.ru/" title="Главная">Главная</a></li>
+										<li><a href="/shop.html" title="Магазин">Магазин</a></li>
+										<li><a href="/look-book.html" title="Книга отзывов">Книга отзывов</a></li>
+										<li class="last"><a href="/about.html" title="О нас">О нас</a></li>
+									</ul>
+								</nav>
+							</div>
+							<a class="header-logo dif link" href="/">
+								<img class="img" src="assets/templates/hairmates/img/logo.svg" alt="logo">
+							</a>
+							<div class="header-block">
+								<div class="header-links df aic jcfe">
+									<!--a class="header-link" href="#">search</a>
+                    <a class="header-link" href="#">profile</a-->
+									<a class="header-link header-cart" href="cart.html" data-cart id="count_cart2">Корзина — 0</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="container">
+				<div class="main-slider swiper">
+					<div class="swiper-pagination"></div>
+					<div class="swiper-wrapper">
+
+
+
+						<div class="swiper-slide">
+							<div class="main-item posr">
+								<img class="main-img img" src="assets/templates/hairmates/img/bg-main-2.jpg" alt="Duplicate spring / summer 2023">
+								<a class="main-text dif link" href="shop/coats-and-blousons.html">
+									<p>spring / summer 2023 look book <br />discover</p>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="main-item posr">
+								<img class="main-img img" src="assets/templates/hairmates/img/bg-main.jpg" alt="spring / summer 2023">
+								<a class="main-text dif link" href="shop/coats-and-blousons.html">
+									<p>spring / summer 2023 look book <br />discover</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<section class="doubleCards">
+			<div class="container">
+				<div class="catalog-list row">
+
+
+					<div class="catalog-block col  big" data-d="1">
+						<div class="catalog-item">
+							<a class="catalog-item__link db posa" href="shop/m0054-topaz-100-viskoza-neonovyy-zelenyy.html"></a>
+							<div class="catalog-item__img">
+								<img class="img" src="" alt="M0054-TOPAZ (100% вискоза, неоновый зеленый)">
+							</div>
+							<div class="catalog-item__text">M0054-TOPAZ (100% вискоза, неоновый зеленый)</div>
+							<div class="catalog-item__price"> $</div>
+						</div>
+					</div>
+
+					<div class="catalog-block col  big" data-d="2">
+						<div class="catalog-item">
+							<a class="catalog-item__link db posa" href="shop/coats-and-blousons/diagonal-wool-overcoat.html"></a>
+							<div class="catalog-item__img">
+								<img class="img" src="assets/images/gallerey/18/2m897859c.09ch_1_win22-2.jpg" alt="Пальто">
+							</div>
+							<div class="catalog-item__text">Пальто</div>
+							<div class="catalog-item__price">100 $</div>
+						</div>
+					</div>
+
+
+
+				</div>
+			</div>
+		</section>
+		<section class="mainCatalog mainBottomCatalog pt-mobile">
+			<div class="container">
+				<div class="mainCatalog-top df aic jcsb">
+					<h2 class="title">Новые поступления</h2>
+					<a class="btn-arrow dif aic link" href="shop.html">
+						<span>Показать</span>
+						<img class="img" src="assets/templates/hairmates/img/next.svg" alt="next">
+					</a>
+				</div>
+				<div class="catalog-list row">
+
+					<div class="catalog-block col  " data-d="1">
+						<div class="catalog-item">
+							<a class="catalog-item__link db posa" href="shop/coats-and-blousons/diagonal-wool-overcoat.html"></a>
+							<div class="catalog-item__img">
+								<img class="img" src="assets/images/gallerey/18/2m897859c.09ch_1_win22-2.jpg" alt="Пальто">
+							</div>
+							<div class="catalog-item__text">Пальто</div>
+							<div class="catalog-item__price">100 $</div>
+						</div>
+					</div>
+
+					<div class="catalog-block col  " data-d="2">
+						<div class="catalog-item">
+							<a class="catalog-item__link db posa" href="shop/shirts/triomphe-frame-hair-clip-in-brass-with-gold-finish-gold.html"></a>
+							<div class="catalog-item__img">
+								<img class="img" src="assets/images/gallerey/19/460ic6bra.35or_1_spr23.jpg"
+									alt="TRIOMPHE FRAME HAIR CLIP IN BRASS WITH GOLD FINISH GOLD">
+							</div>
+							<div class="catalog-item__text">TRIOMPHE FRAME HAIR CLIP IN BRASS WITH GOLD FINISH GOLD</div>
+							<div class="catalog-item__price">15 $</div>
+						</div>
+					</div>
+
+					<div class="catalog-block col  " data-d="3">
+						<div class="catalog-item">
+							<a class="catalog-item__link db posa" href="shop/m0054-topaz-100-viskoza-neonovyy-zelenyy.html"></a>
+							<div class="catalog-item__img">
+								<img class="img" src="" alt="M0054-TOPAZ (100% вискоза, неоновый зеленый)">
+							</div>
+							<div class="catalog-item__text">M0054-TOPAZ (100% вискоза, неоновый зеленый)</div>
+							<div class="catalog-item__price"> $</div>
+						</div>
+					</div>
+
+					<div class="catalog-block col  " data-d="4">
+						<div class="catalog-item">
+							<a class="catalog-item__link db posa" href="shop/m0054-topaz.html"></a>
+							<div class="catalog-item__img">
+								<img class="img" src="" alt="M0054-TOPAZ">
+							</div>
+							<div class="catalog-item__text">M0054-TOPAZ</div>
+							<div class="catalog-item__price"> $</div>
+						</div>
+					</div>
+
+
+
+				</div>
+			</div>
+		</section>
+		<section class="video">
+			<div class="container">
+				<div class="video-slider swiper">
+					<div class="swiper-pagination"></div>
+					<div class="swiper-wrapper">
+
+
+						<div class="swiper-slide">
+							<div class="video-item">
+								<!--img class="video-img img" src="assets/templates/hairmates/img/video.jpg" alt="video"-->
+								<iframe width="100%" height="100%" min-height="550px" src="https://www.youtube.com/embed/1t7g690boao" srcdoc="<style>*{padding:0;margin:0;overflow:hidden}
+    html,body{height:100%}
+    img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}
+    span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}
+    </style>
+    <a href=https://www.youtube.com/embed/1t7g690boao?autoplay=1>
+    <img src=assets/templates/hairmates/img/video.jpg alt='Новинки 2023'>
+    <span>▶</span>
+    </a>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen title="Новинки 2023">
+								</iframe><!--  picture-in-picture -->
+								<div class="video-bottom df aifs jcsb">
+									<div class="video-text">Новинки 2023 <br>video</div><a class="video-link dif link transition"
+										href="https://www.youtube.com/watch?v=1t7g690boao" data-fslightbox="video">play</a>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="mainCatalog mainBottomCatalog">
+			<div class="container">
+				<div class="mainCatalog-top df aic jcsb">
+					<h2 class="title">Коллекции</h2>
+					<a class="btn-arrow dif aic link" href="shop.html"><span>Показать</span>
+						<img class="img" src="assets/templates/hairmates/img/next.svg" alt="next">
+					</a>
+				</div>
+				<div class="catalog-list row">
+
+					<div class="catalog-block col  " data-d="1">
+						<div class="catalog-item">
+							<a class="catalog-item__link db posa" href="shop/coats-and-blousons/diagonal-wool-overcoat.html"></a>
+							<div class="catalog-item__img">
+								<img class="img" src="assets/images/gallerey/18/2m897859c.09ch_1_win22-2.jpg" alt="Пальто">
+							</div>
+							<div class="catalog-item__text">Пальто</div>
+							<div class="catalog-item__price">100 $</div>
+						</div>
+					</div>
+
+					<div class="catalog-block col  " data-d="2">
+						<div class="catalog-item">
+							<a class="catalog-item__link db posa" href="shop/shirts/triomphe-frame-hair-clip-in-brass-with-gold-finish-gold.html"></a>
+							<div class="catalog-item__img">
+								<img class="img" src="assets/images/gallerey/19/460ic6bra.35or_1_spr23.jpg"
+									alt="TRIOMPHE FRAME HAIR CLIP IN BRASS WITH GOLD FINISH GOLD">
+							</div>
+							<div class="catalog-item__text">TRIOMPHE FRAME HAIR CLIP IN BRASS WITH GOLD FINISH GOLD</div>
+							<div class="catalog-item__price">15 $</div>
+						</div>
+					</div>
+
+					<div class="catalog-block col  " data-d="3">
+						<div class="catalog-item">
+							<a class="catalog-item__link db posa" href="shop/m0054-topaz-100-viskoza-neonovyy-zelenyy.html"></a>
+							<div class="catalog-item__img">
+								<img class="img" src="" alt="M0054-TOPAZ (100% вискоза, неоновый зеленый)">
+							</div>
+							<div class="catalog-item__text">M0054-TOPAZ (100% вискоза, неоновый зеленый)</div>
+							<div class="catalog-item__price"> $</div>
+						</div>
+					</div>
+
+					<div class="catalog-block col  " data-d="4">
+						<div class="catalog-item">
+							<a class="catalog-item__link db posa" href="shop/m0054-topaz.html"></a>
+							<div class="catalog-item__img">
+								<img class="img" src="" alt="M0054-TOPAZ">
+							</div>
+							<div class="catalog-item__text">M0054-TOPAZ</div>
+							<div class="catalog-item__price"> $</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</section>
+		<section class="instagram">
+			<div class="container">
+				<div class="instagram-top df aic jcsb">
+					<h2 class="title">instagram</h2>
+					<a class="btn-arrow dif aic link" href="https://www.instagram.com/hairmate.warsaw/" target="_blunk">
+						<span>follow</span>
+						<img class="img" src="assets/templates/hairmates/img/next.svg" alt="instagram">
+					</a>
+				</div>
+				<div class="instagram-list row">
+
+
+					<div class="instagram-block col">
+						<a class="instagram-item db link posr" href="assets/templates/hairmates/img/instagram.png" data-fslightbox="instagram">
+							<img class="img posa" src="assets/templates/hairmates/img/instagram.png" alt="1"></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-top df aic jcsb">
+					<nav class="footer-nav">
+						<ul>
+							<li><a href="/contact.html" title="Контакты">Контакты</a></li>
+							<li><a href="/whatsapp.html" title="Whatsapp">Whatsapp</a></li>
+							<li><a href="/messenger.html" title="Messenger">Messenger</a></li>
+							<li><a href="/faq.html" title="FAQ">FAQ</a></li>
+							<li><a href="/legal-terms.html" title="Юридические термины">Юридические термины</a></li>
+							<li class="last"><a href="/privacy-policy.html" title="Политика конфиденциальности">Политика конфиденциальности</a></li>
+						</ul>
+					</nav>
+					<a class="footer-link dif link" href="https://hairmates.shop/">INTERNATIONAL WEB SITE | EN</a>
+				</div>
+				<div class="footer-bottom df aic jcsb">
+					COPYRIGHT © 2023 HAIRMATES
+					<div class="footer-copy">
+
+						<a class="footer-link dif link" href="/">Подписаться на рассылку</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/templates/hairmates/libs/swiper/swiper-bundle.min.js"></script>
+	<!--script src="assets/templates/hairmates/libs/jquery.min.js"></script-->
+	<!--script type="text/javascript" src="https://crm.ifreework.com/assets/snippets/shopkeeper/js/jquery-1.6.3.min.js"></script-->
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+		crossorigin="anonymous"></script>
+	<script src="assets/templates/hairmates/libs/nice-select2.js"></script>
+	<script src="assets/templates/hairmates/libs/modal/modal.js"></script>
+	<script src="assets/templates/hairmates/libs/fslightbox.js"></script>
+	<script src="assets/templates/hairmates/js/main.js"></script>
+	<script src="assets/templates/add.js"></script>
+
+	<!-- cookie-popup & cookie-popup Scripts -->
+	<script src="assets/templates/hairmates/js/popups-start.js"></script>
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript">
+		(function (m, e, t, r, i, k, a) {
+			m[i] = m[i] || function () {
+				(m[i].a = m[i].a || []).push(arguments)
+			};
+			m[i].l = 1 * new Date();
+			for (var j = 0; j < document.scripts.length; j++) {
+				if (document.scripts[j].src === r) {
+					return;
+				}
+			}
+			k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+		})
+		(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+		ym(92906804, "init", {
+			clickmap: true,
+			trackLinks: true,
+			accurateTrackBounce: true,
+			webvisor: true,
+			ecommerce: "dataLayer"
+		});
+	</script>
+	<noscript>
+		<div><img src="https://mc.yandex.ru/watch/92906804" style="position:absolute; left:-9999px;" alt="" /></div>
+	</noscript>
+	<!-- /Yandex.Metrika counter -->
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-BWEVK1RTTX"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'G-BWEVK1RTTX');
+	</script>
+
+
+	<script type="text/javascript">
+		var site_url = 'https://hairmates.ru/';
+		var shkOptions = {
+			stuffCont: 'div.shk-item',
+			lang: 'english',
+			currency: '$',
+			orderFormPage: 'cart.html',
+			cartTpl: ['@FILE:chunk_shopCart.tpl', '@FILE:chunk_shopCartRow.tpl', ''],
+			priceTV: 'price',
+			counterField: true,
+			changePrice: true,
+			flyToCart: 'image'
+		};
+		jQuery(document).ready(function () {
+			jQuery(shkOptions.stuffCont).shopkeeper();
+		});
+	</script>
+	<script src="assets/snippets/shopkeeper/lang/english.js" type="text/javascript"></script>
+	<script src="assets/snippets/shopkeeper/js/jquery.livequery.js" type="text/javascript"></script>
+	<script src="assets/snippets/shopkeeper/js/shopkeeper.js" type="text/javascript"></script>
+
+</body>
+
+</html>
