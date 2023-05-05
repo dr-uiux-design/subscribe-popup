@@ -258,9 +258,11 @@
 }
 @media (max-width: 480px) {
   .cookie-popup__overlay {
-    padding-bottom: 80px !important;
+    padding-bottom: 20px !important;
   }
   .cookie-popup__body {
+    -ms-flex-item-align: inherit;
+        align-self: inherit;
     padding: 25px !important;
   }
 }
